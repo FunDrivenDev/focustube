@@ -1,6 +1,6 @@
 # Features
 
-Each file describes one feature: what it is for, what it does, and what is still open. Nothing here is built yet; the app is the MOSST template renamed. Every feature keeps the four design rules in `CLAUDE.md`: every action has a key, every setting lives in `⌘,`, every search is fuzzy, every action is undone rather than confirmed.
+Each file describes one feature: what it is for, what it does, and what is still open. Nothing here is built yet; the app is the MOSST template renamed. What YouTube allows, and what it costs in requests and in account risk, is in [the research](../research/README.md). Every feature keeps the four design rules in `CLAUDE.md`: every action has a key, every setting lives in `⌘,`, every search is fuzzy, every action is undone rather than confirmed.
 
 | Feature | In one line |
 | --- | --- |

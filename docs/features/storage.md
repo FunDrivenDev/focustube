@@ -16,3 +16,7 @@ Tokens are not in the database: they live in the Keychain (see [Accounts](accoun
 
 - Which crate: `rusqlite` or `sqlx`, and how are migrations run?
 - How do undo and redo (`History` in `src-tauri/src/model.rs`) map onto database writes?
+
+## Research
+
+See [the constraints](../research/README.md) that YouTube sets on this feature.

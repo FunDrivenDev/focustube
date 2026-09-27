@@ -18,3 +18,7 @@ When the app starts, or when you choose "analyze" on a video, it reads the trans
 
 - Who does the summarizing: a local model, an API such as Claude's, or an [agent](agents.md)? Each has a cost and a privacy trade-off.
 - How long is a summary, and is it per theme (what matters to this theme) or generic?
+
+## Research
+
+See [the constraints](../research/README.md) that YouTube sets on this feature.

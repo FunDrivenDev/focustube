@@ -12,3 +12,7 @@ The feed learns what you want over time, from your [feedback](feedback.md), what
 
 - Which model: simple weights per source and keyword, or embeddings of titles and transcripts?
 - The YouTube Data API does not give the watch history; is a Google Takeout import enough?
+
+## Research
+
+See [the constraints](../research/README.md) that YouTube sets on this feature.
