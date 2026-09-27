@@ -12,3 +12,7 @@ Beyond your sources, the app can suggest new ones, from a search you make or fro
 
 - A search costs 100 units of the daily YouTube API quota: how many can the app afford, and when?
 - Can the [references](references.md) found in videos feed the suggestions?
+
+## Research
+
+See [the constraints](../research/README.md) that YouTube sets on this feature.

@@ -14,3 +14,7 @@ The app works without an account. Connecting a Google account, and optionally Yo
 
 - There is no Premium API: does Premium only apply when playback happens in a signed-in YouTube player?
 - Which OAuth scopes are enough (`youtube.readonly`), and does the app need Google's verification to ship publicly?
+
+## Research
+
+See [the constraints](../research/README.md) that YouTube sets on this feature.

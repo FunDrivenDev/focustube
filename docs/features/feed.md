@@ -15,3 +15,7 @@ The feed shows only the videos you asked for, from your [sources](sources.md) an
 
 - Play in the app (an embedded player, which shows YouTube's end screen unless hidden) or always open the browser?
 - How are videos ranked: by date, by [learned preferences](preference-learning.md), or both, switchable?
+
+## Research
+
+See [the constraints](../research/README.md) that YouTube sets on this feature.

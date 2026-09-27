@@ -1,6 +1,6 @@
 # focustube — working rules
 
-The app's purpose is in `docs/mission.md`; each planned feature, with its open questions, is in `docs/features/`. Read them before building a feature, and update the feature's file when a decision closes one of its questions.
+The app's purpose is in `docs/mission.md`; each planned feature, with its open questions, is in `docs/features/`; what YouTube allows, and the rules that keep a signed-in account safe, are in `docs/research/`. Read them before building a feature, and update the feature's file when a decision closes one of its questions.
 
 ## Design rules
 
