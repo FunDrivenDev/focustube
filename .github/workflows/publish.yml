@@ -1,0 +1,56 @@
+# Pushes a released app to the public Homebrew tap, so `brew install rlvdx/tap/focustube`
+# works without access to this repository. The Release workflow calls it; a release
+# published by hand (`just publish`) starts it. The app is scanned once more first:
+# this is where it goes public.
+
+name: Publish
+
+on:
+  release:
+    types: [published]
+  workflow_call:
+    inputs:
+      tag:
+        description: The release tag, such as v0.2.0.
+        required: true
+        type: string
+
+permissions: {}
+
+jobs:
+  tap:
+    if: ${{ github.event_name != 'release' || !github.event.release.prerelease }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    # Holds TAP_TOKEN.
+    environment: release
+    permissions:
+      contents: read
+    env:
+      TAG: ${{ inputs.tag || github.event.release.tag_name }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
+        with:
+          install_args: just gitleaks
+          # Nothing restored from a cache runs where the app goes public.
+          cache: false
+
+      - name: Download and scan the app
+        run: |
+          gh release download "$TAG" --repo "$GITHUB_REPOSITORY" --pattern 'focustube-*-macos-arm64.zip'
+          unzip -q focustube-*-macos-arm64.zip -d unpacked
+          just scan-app unpacked/focustube.app
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - uses: rlvdx/homebrew-tap/.github/actions/publish-cask@ef52362d9c7edd3b26ffc16109cad76eacd68fd3
+        with:
+          cask: focustube
+          version: ${{ env.TAG }}
+          archive: focustube-*-macos-arm64.zip
+          definition: packaging/focustube.rb
+          token: ${{ secrets.TAP_TOKEN }}

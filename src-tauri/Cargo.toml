@@ -1,0 +1,37 @@
+[package]
+name = "focustube"
+version = "0.1.0"
+description = "Filters the noise on YouTube into a focused, learning-oriented feed of the channels and topics you choose."
+edition = "2024"
+rust-version = "1.98"
+publish = false
+
+[lib]
+name = "focustube_lib"
+crate-type = ["lib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+nucleo-matcher = "0.3"
+
+[dev-dependencies]
+tempfile = "3"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+dbg_macro = "warn"
+todo = "warn"
