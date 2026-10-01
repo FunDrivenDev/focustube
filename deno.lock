@@ -1,13 +1,13 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:@sveltejs/vite-plugin-svelte@^7.3.0": "7.3.0_svelte@5.57.1_vite@8.3.0",
+    "npm:@sveltejs/vite-plugin-svelte@^7.3.1": "7.3.1_svelte@5.57.1_vite@8.3.1",
     "npm:@tauri-apps/api@^2.11.1": "2.11.1",
     "npm:@tauri-apps/cli@^2.11.5": "2.11.5",
     "npm:svelte-check@^4.7.6": "4.7.6_svelte@5.57.1_typescript@6.0.3",
     "npm:svelte@^5.57.1": "5.57.1",
     "npm:typescript@^7.0.2": "7.0.2",
-    "npm:vite@^8.3.0": "8.3.0"
+    "npm:vite@^8.3.1": "8.3.1"
   },
   "npm": {
     "@jridgewell/gen-mapping@0.3.13": {
@@ -127,11 +127,11 @@
     "@sveltejs/load-config@0.2.3": {
       "integrity": "sha512-VT3qmUb8pRV2QrZjd8iAmtg8lf4W0TIjZbvXtz5MKei/q96teWZgGJyyidJzOjzZzvdq616eSRVeMYIQChUTAQ=="
     },
-    "@sveltejs/vite-plugin-svelte@7.3.0_svelte@5.57.1_vite@8.3.0": {
-      "integrity": "sha512-QbRoJyD92e9R0ufeQIWRHrCC0ObcqSv/aBDdrQMoU+sypav3cDx5wytdQ6GLdXjEMO6xjrXGzfkUygng8JMv0A==",
+    "@sveltejs/vite-plugin-svelte@7.3.1_svelte@5.57.1_vite@8.3.1": {
+      "integrity": "sha512-ZPsLN8B1e/En+Ak5s4V7srFDT532oS0qieLsQwu63NGKsS+iAjoO2Js1BochlHlglcU+Pt7WAO3C5Ee+4f6gVA==",
       "dependencies": [
         "deepmerge",
-        "magic-string@1.4.1",
+        "magic-string@1.4.2",
         "obug",
         "svelte",
         "vite",
@@ -456,8 +456,8 @@
         "@jridgewell/sourcemap-codec"
       ]
     },
-    "magic-string@1.4.1": {
-      "integrity": "sha512-8lyCu36ErXR0J9uaGKlKQoiLZKmtI63YGLE8G2o9jyRPdr4X47LusSOwgOJOzcVtp81fTAAjxR7BwKz682Jhow==",
+    "magic-string@1.4.2": {
+      "integrity": "sha512-vG+rjFRj1PqdIBozIxAGMjPlOhaVe+GXpbttY/iSK7rGcJRMlwNJO7dcUwmUqkymsFLJiNGI06t4D7Fr7yRC9g==",
       "dependencies": [
         "@jridgewell/sourcemap-codec"
       ]
@@ -594,8 +594,8 @@
       ],
       "bin": true
     },
-    "vite@8.3.0": {
-      "integrity": "sha512-lhZBVvEHefgE+HQZC9O7EBJgCU/nVzFNl7vkS4RE0APtWLP02/8QVIkQtzBxPquh7lq5/78NHipTj7ODQ6XuyQ==",
+    "vite@8.3.1": {
+      "integrity": "sha512-/bvH9E9tmCXRGp2uXY3WbOldqpTwFkbha/8ANaEQ6VkxhH60KyqLwgZq6lG2y+4uT55x9+9eUHMpQ7uGnOCKjA==",
       "dependencies": [
         "lightningcss",
         "picomatch",
@@ -608,7 +608,7 @@
       ],
       "bin": true
     },
-    "vitefu@1.1.3_vite@8.3.0": {
+    "vitefu@1.1.3_vite@8.3.1": {
       "integrity": "sha512-ub4okH7Z5KLjb6hDyjqrGXqWtWvoYdU3IGm/NorpgHncKoLTCfRIbvlhBm7r0YstIaQRYlp4yEbFqDcKSzXSSg==",
       "dependencies": [
         "vite"
@@ -623,13 +623,13 @@
   },
   "workspace": {
     "dependencies": [
-      "npm:@sveltejs/vite-plugin-svelte@^7.3.0",
+      "npm:@sveltejs/vite-plugin-svelte@^7.3.1",
       "npm:@tauri-apps/api@^2.11.1",
       "npm:@tauri-apps/cli@^2.11.5",
       "npm:svelte-check@^4.7.6",
       "npm:svelte@^5.57.1",
       "npm:typescript@^7.0.2",
-      "npm:vite@^8.3.0"
+      "npm:vite@^8.3.1"
     ]
   }
 }
